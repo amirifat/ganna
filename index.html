@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+	<style type="text/css">
+		input[type = "button"]{
+			width: 20%;
+			float: left;
+			height: 45px;
+		}
+	</style>
+
+ 
+</head>
+<body>
+
+    
+  <div class="container py-5">
+     
+      
+       
+       <div class="row justify-content-center">
+       	<div class="col-lg-4 col-md-6 col-sm-8">
+       		
+          <form name="calculator">
+      	    <input type="text" name="display" readonly class="form-control bg-dark text-white">
+            
+            <input type="button" onclick="Zero()" value="0" class="btn-danger">
+            <input type="button" onclick="One()" value="1" class="btn-danger">
+            <input type="button" onclick="Two()" value="2" class="btn-danger">
+            <input type="button" onclick="Three()" value="3" class="btn-danger">
+            <input type="button" onclick="Four()" value="4" class="btn-danger">
+            <br>
+            <input type="button" onclick="Five()" value="5" class="btn-danger">
+            <input type="button" onclick="Six()" value="6" class="btn-danger">
+            <input type="button" onclick="Seven()" value="7" class="btn-danger">
+            <input type="button" onclick="Eight()" value="8" class="btn-danger">
+            <input type="button" onclick="Nine()" value="9" class="btn-danger">
+            <br>
+            <input type="button" onclick="Add()" value="+" class="btn-secondary">
+            <input type="button" onclick="Sub()" value="-" class="btn-secondary">
+            <input type="button" onclick="Mul()" value="*" class="btn-secondary">
+            <input type="button" onclick="Div()" value="/" class="btn-secondary">
+            <input type="button" onclick="Total()" value="=" class="btn-secondary">
+            <br>
+            <input type="button" onclick="Clear()" value="C" class="btn-primary w-100">
+      
+
+
+      </form>
+             
+        <h1 id="show"></h1>
+
+
+       	</div>
+
+       </div>
+
+   </div>      
+
+
+
+    <script>
+
+
+         function Zero(){
+         	document.calculator.display.value += 0;
+         }
+
+         function One(){
+        	document.calculator.display.value += 1;
+         }
+
+         function Two(){
+         	document.calculator.display.value += 2;
+         }
+
+         function Three(){
+         	document.calculator.display.value += 3;
+         }
+
+         function Four(){
+         	document.calculator.display.value += 4;
+         }
+
+         function Five(){
+         	document.calculator.display.value += 5;
+         }
+
+         function Six(){
+         	document.calculator.display.value += 6;
+         }
+
+         function Seven(){
+         	document.calculator.display.value += 7;
+         }
+
+         function Eight(){
+         	document.calculator.display.value += 8;
+         }
+
+         function Nine(){
+         	document.calculator.display.value += 9;
+         }
+
+         function Add(){
+         	document.calculator.display.value += "+";
+         }
+
+         function Sub(){
+         	document.calculator.display.value += "-" ;
+         }
+
+         function Mul(){
+         	document.calculator.display.value += "*" ;
+         }
+
+         function Div(){
+         	document.calculator.display.value += "/" ;
+         }
+         function Clear(){
+         	document.calculator.display.value = "" ;
+         }
+
+         function Total(){
+         	var Result = eval(
+         	document.calculator.display.value);
+
+         	document.calculator.display.value = Result;
+         }
+
+    </script>
+
+
+    <div class="container py-3">
+        <div class="row text-center">
+            <div class="col-lg col-md col-sm">
+              <h4>All Reserved & Copyright by #Suanko.</h4>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg col-md col-sm">
+              <h4>Developed On 4/1/2020.</h4>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
